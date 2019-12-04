@@ -28,14 +28,14 @@ The Euclidean clustering algorithms is in the function ProcessPointClouds::eucli
 ### Compiling and Running
 
 #### Compiling
-To compile the project, first, create a build directory and change to that directory:
-	mkdir build && cd build 
-From within the build directory, then run cmake and make as follows:
-	cmake ..
-	make
+To compile the project, first, create a build directory and change to that directory:  
+	mkdir build && cd build   
+From within the build directory, then run cmake and make as follows:  
+	cmake ..  
+	make  
 #### Running
-The executable will be placed in the build directory. From within build, you can run the project as follows:
-	./environment
+The executable will be placed in the build directory. From within build, you can run the project as follows:  
+	./environment  
 
 #### Prebuilt Binaries via Universal Installer
 http://www.pointclouds.org/downloads/macosx.html  
