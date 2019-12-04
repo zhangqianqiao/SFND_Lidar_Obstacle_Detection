@@ -12,46 +12,36 @@ In this course we will be talking about sensor fusion, whch is the process of ta
 
 **Sensor Fusion** by combing lidar's high resoultion imaging with radar's ability to measure velocity of objects we can get a better understanding of the sorrounding environment than we could using one of the sensors alone.
 
+### Project Starter Repository
+The source code for the project is contained in ***src*** directory;
+The src directory contains the following files:
 
-## Installation
+ **render**
+ **sensors**
+ *environemnt.cpp*
+ *processPointClouds.h*
+ *processPointClouds.cpp*
 
-### Ubuntu 
+__RANSAC__
+The RANSAC algorithms is in the function ProcessPointClouds::SegmentPlane of the file ***processPointClouds.cpp***;
 
-```bash
-$> sudo apt install libpcl-dev
-$> cd ~
-$> git clone https://github.com/udacity/SFND_Lidar_Obstacle_Detection.git
-$> cd SFND_Lidar_Obstacle_Detection
-$> mkdir build && cd build
-$> cmake ..
-$> make
-$> ./environment
-```
+__KD-Tree__
+The interface of the KD_Tree is implemented in the file ***processPointClouds.h***;
 
-### Windows 
+__Euclidean clustering__
+The Euclidean clustering algorithms is in the function ProcessPointClouds::euclideanCluster and ProcessPointClouds::clusterHelper of the file ***processPointClouds.cpp***;
 
-http://www.pointclouds.org/downloads/windows.html
+### Compiling and Running
 
-### MAC
-
-#### Install via Homebrew
-1. install [homebrew](https://brew.sh/)
-2. update homebrew 
-	```bash
-	$> brew update
-	```
-3. add  homebrew science [tap](https://docs.brew.sh/Taps) 
-	```bash
-	$> brew tap brewsci/science
-	```
-4. view pcl install options
-	```bash
-	$> brew options pcl
-	```
-5. install PCL 
-	```bash
-	$> brew install pcl
-	```
+#### Compiling
+To compile the project, first, create a build directory and change to that directory:
+	mkdir build && cd build 
+From within the build directory, then run cmake and make as follows:
+	cmake ..
+	make
+#### Running
+The executable will be placed in the build directory. From within build, you can run the project as follows:
+	./environment
 
 #### Prebuilt Binaries via Universal Installer
 http://www.pointclouds.org/downloads/macosx.html  
